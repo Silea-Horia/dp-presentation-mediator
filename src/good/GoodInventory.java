@@ -16,7 +16,7 @@ public class GoodInventory extends Colleague implements Inventory {
     @Override
     public void addItem(Item item) {
         this.items.add(item);
-        this.mediator.inventorySizeUpdated();
+        this.mediator.notify(this, new Event(item, EventType.INVENTORY_SIZE_UPDATED));
     }
 
     @Override

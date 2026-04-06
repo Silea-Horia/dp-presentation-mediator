@@ -2,11 +2,23 @@ package good;
 
 import shared.*;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Consumer;
+
 public class ConcreteMediator implements Mediator {
     private Player player;
     private Inventory inventory;
     private QuestLog questLog;
     private AchievementSystem achievementSystem;
+
+    private final Map<EventType, Consumer<Event>> handlers = new HashMap<>();
+
+    public ConcreteMediator() {
+        handlers.put(EventType.QUEST_ITEM_COLLECTED, this::questItemCollected);
+        handlers.put(EventType.INVENTORY_SIZE_UPDATED, this::inventorySizeUpdated);
+        handlers.put(EventType.ITEM_PICKED_UP, this::itemPickedUp);
+    }
 
     public ConcreteMediator setPlayer(Player player) {
         this.player = player;
@@ -29,18 +41,22 @@ public class ConcreteMediator implements Mediator {
     }
 
     @Override
-    public void questItemCollected() {
+    public void notify(Colleague sender, Event event) {
+        handlers.getOrDefault(event.type(), _ -> {}).accept(event);
+    }
+
+    private void questItemCollected(Event event) {
         this.player.levelUp();
     }
 
-    @Override
-    public void inventorySizeUpdated() {
+    private void inventorySizeUpdated(Event event) {
         this.achievementSystem.checkInventoryAchievement(this.inventory);
     }
 
-    @Override
-    public void itemPickedUp(Item item) {
-        this.inventory.addItem(item);
-        this.questLog.checkQuestItem(this.player, item);
+    private void itemPickedUp(Event event) {
+        if (event.payload() instanceof Item item) {
+            this.inventory.addItem(item);
+            this.questLog.checkQuestItem(this.player, item);
+        }
     }
 }

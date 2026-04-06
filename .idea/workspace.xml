@@ -4,30 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="932a3f0f-0c65-43f5-a573-b040d295efba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ToyGame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PlayerFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bad/BadInventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bad/BadPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bad/BadQuestLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/good/Colleague.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/good/ConcreteMediator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/good/GoodInventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/good/GoodPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/good/GoodQuestLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/good/Mediator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/AchievementSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/QuestLog.java" afterDir="false" />
+    <list default="true" id="932a3f0f-0c65-43f5-a573-b040d295efba" name="Changes" comment="dp presentation">
+      <change afterPath="$PROJECT_DIR$/src/bad/BadAchievementSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/good/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/good/EventType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/good/GoodAchievementSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/good/ConcreteMediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/good/ConcreteMediator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/good/GoodInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/good/GoodInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/good/GoodPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/good/GoodPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/good/GoodQuestLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/good/GoodQuestLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/good/Mediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/good/Mediator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/AchievementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/AchievementSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Record" />
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -54,6 +44,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Silea-Horia&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Silea-Horia/dp-presentation-mediator.git&quot;,
+    &quot;accountId&quot;: &quot;e79c207c-db77-4dbc-9889-d3160171ed74&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -63,23 +65,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/horia jocuri/IdeaProjects/ToyGame&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="good" />
@@ -116,12 +119,30 @@
       <option name="presentableId" value="Default" />
       <updated>1775478500451</updated>
       <workItem from="1775478501518" duration="4422000" />
-      <workItem from="1775482977382" duration="665000" />
+      <workItem from="1775482977382" duration="3878000" />
+      <workItem from="1775490943399" duration="680000" />
     </task>
+    <task id="LOCAL-00001" summary="dp presentation">
+      <option name="closed" value="true" />
+      <created>1775483787550</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775483787550</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dp presentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="dp presentation" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

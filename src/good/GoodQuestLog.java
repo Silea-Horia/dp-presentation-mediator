@@ -13,7 +13,7 @@ public class GoodQuestLog extends Colleague implements QuestLog  {
     public void checkQuestItem(Player player, Item item) {
         if (questItem.equals(item)) {
             System.out.println("Quest item collected!");
-            mediator.questItemCollected();
+            mediator.notify(this, new Event(item, EventType.QUEST_ITEM_COLLECTED));
         }
     }
 }

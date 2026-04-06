@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>shared</OriginalElement>
+  <nodes>
+    <node x="358.16666666666663" y="101.25">shared.Player</node>
+    <node x="546.75" y="-62.083333333333286">shared.QuestLog</node>
+    <node x="87.5625" y="-70.20833333333334">shared.Inventory</node>
+    <node x="555.5" y="101.25">bad.BadQuestLog</node>
+    <node x="118.8125" y="101.25">bad.BadInventory</node>
+    <node x="-225.79166666666657" y="101.25">shared.AchievementSystem</node>
+    <node x="343.16666666666663" y="-62.083333333333286">bad.BadPlayer</node>
+    <node x="-235.37499999999997" y="-45.833333333333286">bad.BadAchievementSystem</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="bad.BadQuestLog" target="shared.QuestLog" relationship="REALIZATION">
+      <point x="-23.75" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="bad.BadPlayer" target="shared.Inventory" relationship="TO_ONE">
+      <point x="-63.5" y="-6.5" />
+      <point x="61.5" y="1.6250000000000568" />
+    </edge>
+    <edge source="bad.BadInventory" target="shared.Inventory" relationship="REALIZATION">
+      <point x="-46.25" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="bad.BadQuestLog" target="shared.Player" relationship="REALIZATION">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="bad.BadAchievementSystem" target="shared.AchievementSystem" relationship="REALIZATION">
+      <point x="-20.0" y="-14.0" />
+      <point x="-136.87499999999997" y="124.0" />
+      <point x="-122.29166666666657" y="124.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="bad.BadPlayer" target="shared.Player" relationship="REALIZATION">
+      <point x="30.0" y="-14.0" />
+      <point x="30.0" y="14.0" />
+    </edge>
+    <edge source="bad.BadInventory" target="shared.AchievementSystem" relationship="TO_ONE">
+      <point x="-76.5" y="0.0" />
+      <point x="103.5" y="0.0" />
+    </edge>
+    <edge source="bad.BadPlayer" target="shared.QuestLog" relationship="TO_ONE">
+      <point x="15.0" y="-14.0" />
+      <point x="421.66666666666663" y="-48.083333333333286" />
+      <point x="62.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.9600000000000002" showDependencies="true" x="219.56249999999994" y="227.72916666666657" />
+  <SelectedNodes>
+    <node>shared.Player</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

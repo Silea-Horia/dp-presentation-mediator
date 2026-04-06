@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>good</OriginalElement>
+  <nodes>
+    <node x="-510.69139297848244" y="-290.0">good.Colleague</node>
+    <node x="-857.5237825594564" y="-320.6228765571914">good.Mediator</node>
+    <node x="27.001132502831297" y="71.9988674971687">good.GoodQuestLog</node>
+    <node x="-633.3624009060023" y="71.9988674971687">good.GoodInventory</node>
+    <node x="-478.69139297848244" y="-453.03510758776895">good.Event</node>
+    <node x="-136.53340883352223" y="71.9988674971687">good.GoodPlayer</node>
+    <node x="-426.9479048697623" y="71.9988674971687">good.GoodAchievementSystem</node>
+    <node x="-879.365798414496" y="-50.0">good.ConcreteMediator</node>
+    <node x="-705.6223103057758" y="-453.03510758776895">good.EventType</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="good.GoodAchievementSystem" target="good.Mediator" relationship="DEPENDENCY">
+      <point x="62.25" y="-14.0" />
+      <point x="-240.19790486976228" y="44.0" />
+      <point x="-168.0" y="44.0" />
+      <point x="-168.0" y="-76.0" />
+      <point x="-248.0" y="-76.0" />
+      <point x="-248.0" y="-196.0" />
+      <point x="-798.5237825594564" y="-196.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="good.ConcreteMediator" target="good.Mediator" relationship="REALIZATION">
+      <point x="63.0" y="-14.0" />
+      <point x="-721.865798414496" y="-76.0" />
+      <point x="-828.0237825594564" y="-76.0" />
+      <point x="-29.5" y="14.0" />
+    </edge>
+    <edge source="good.ConcreteMediator" target="good.EventType" relationship="TO_MANY">
+      <point x="-63.0" y="-14.0" />
+      <point x="-847.865798414496" y="-96.0" />
+      <point x="-608.0" y="-96.0" />
+      <point x="-608.0" y="-356.0" />
+      <point x="-672.6223103057758" y="-356.0" />
+      <point x="-33.0" y="14.0" />
+    </edge>
+    <edge source="good.Event" target="good.EventType" relationship="DEPENDENCY">
+      <point x="0.0" y="-14.0" />
+      <point x="-431.69139297848244" y="-356.0" />
+      <point x="-606.6223103057758" y="-356.0" />
+      <point x="33.0" y="14.0" />
+    </edge>
+    <edge source="good.Mediator" target="good.Event" relationship="DEPENDENCY">
+      <point x="0.0" y="-14.0" />
+      <point x="-798.5237825594564" y="-236.0" />
+      <point x="-528.0" y="-236.0" />
+      <point x="-528.0" y="-316.0" />
+      <point x="-431.69139297848244" y="-316.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="good.GoodQuestLog" target="good.Colleague" relationship="GENERALIZATION">
+      <point x="-15.0" y="-14.0" />
+      <point x="95.0011325028313" y="-276.0" />
+      <point x="63.0" y="0.0" />
+    </edge>
+    <edge source="good.GoodQuestLog" target="good.Mediator" relationship="DEPENDENCY">
+      <point x="0.0" y="14.0" />
+      <point x="110.0011325028313" y="117.4988674971687" />
+      <point x="-896.865798414496" y="117.4988674971687" />
+      <point x="-896.865798414496" y="-306.6228765571914" />
+      <point x="-59.0" y="0.0" />
+    </edge>
+    <edge source="good.ConcreteMediator" target="good.Event" relationship="DEPENDENCY">
+      <point x="0.0" y="-14.0" />
+      <point x="-784.865798414496" y="-316.0" />
+      <point x="-431.69139297848244" y="-316.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="good.GoodInventory" target="good.Mediator" relationship="DEPENDENCY">
+      <point x="0.0" y="-14.0" />
+      <point x="-550.8624009060023" y="24.0" />
+      <point x="-248.0" y="24.0" />
+      <point x="-248.0" y="-196.0" />
+      <point x="-798.5237825594564" y="-196.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="good.GoodInventory" target="good.Event" relationship="CREATE">
+      <point x="-55.0" y="-14.0" />
+      <point x="-605.8624009060023" y="44.0" />
+      <point x="-408.0" y="44.0" />
+      <point x="-408.0" y="-96.0" />
+      <point x="-428.0" y="-96.0" />
+      <point x="-428.0" y="-216.0" />
+      <point x="-431.69139297848244" y="-216.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="good.GoodQuestLog" target="good.EventType" relationship="DEPENDENCY">
+      <point x="0.0" y="-14.0" />
+      <point x="110.0011325028313" y="-470.53510758776895" />
+      <point x="-639.6223103057758" y="-470.53510758776895" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="good.GoodPlayer" target="good.Colleague" relationship="GENERALIZATION">
+      <point x="-46.33333333333333" y="-14.0" />
+      <point x="-113.36674216685556" y="64.0" />
+      <point x="-248.0" y="64.0" />
+      <point x="-248.0" y="4.0" />
+      <point x="-447.69139297848244" y="4.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="good.GoodPlayer" target="good.Event" relationship="CREATE">
+      <point x="46.33333333333333" y="-14.0" />
+      <point x="-20.700075500188902" y="44.0" />
+      <point x="-431.69139297848244" y="44.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="good.GoodInventory" target="good.Colleague" relationship="GENERALIZATION">
+      <point x="55.0" y="-14.0" />
+      <point x="-495.86240090600234" y="64.0" />
+      <point x="-248.0" y="64.0" />
+      <point x="-248.0" y="4.0" />
+      <point x="-447.69139297848244" y="4.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="good.GoodInventory" target="good.EventType" relationship="DEPENDENCY">
+      <point x="0.0" y="-14.0" />
+      <point x="-550.8624009060023" y="24.0" />
+      <point x="-648.0" y="24.0" />
+      <point x="-648.0" y="-76.0" />
+      <point x="-568.0" y="-76.0" />
+      <point x="-568.0" y="-336.0" />
+      <point x="-88.0" y="-336.0" />
+      <point x="-88.0" y="-356.0" />
+      <point x="-606.6223103057758" y="-356.0" />
+      <point x="33.0" y="14.0" />
+    </edge>
+    <edge source="good.GoodPlayer" target="good.Mediator" relationship="DEPENDENCY">
+      <point x="0.0" y="-14.0" />
+      <point x="-208.0" y="71.9988674971687" />
+      <point x="-208.0" y="-76.0" />
+      <point x="-248.0" y="-76.0" />
+      <point x="-248.0" y="-196.0" />
+      <point x="-798.5237825594564" y="-196.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="good.GoodAchievementSystem" target="good.Colleague" relationship="GENERALIZATION">
+      <point x="-62.25" y="-14.0" />
+      <point x="-364.6979048697623" y="64.0" />
+      <point x="-248.0" y="64.0" />
+      <point x="-248.0" y="4.0" />
+      <point x="-447.69139297848244" y="4.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="good.Colleague" target="good.Mediator" relationship="TO_ONE">
+      <point x="0.0" y="-14.0" />
+      <point x="-447.69139297848244" y="-76.0" />
+      <point x="-769.0237825594564" y="-76.0" />
+      <point x="29.5" y="14.0" />
+    </edge>
+    <edge source="good.GoodPlayer" target="good.EventType" relationship="DEPENDENCY">
+      <point x="0.0" y="-14.0" />
+      <point x="52.0" y="71.9988674971687" />
+      <point x="52.0" y="-336.0" />
+      <point x="-88.0" y="-336.0" />
+      <point x="-88.0" y="-356.0" />
+      <point x="-606.6223103057758" y="-356.0" />
+      <point x="33.0" y="14.0" />
+    </edge>
+    <edge source="good.GoodQuestLog" target="good.Event" relationship="CREATE">
+      <point x="15.0" y="-14.0" />
+      <point x="125.0011325028313" y="-439.03510758776895" />
+      <point x="47.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.7435789473684211" showDependencies="true" x="-284.33295583238964" y="-20.505379388448546" />
+  <SelectedNodes>
+    <node>good.GoodQuestLog</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

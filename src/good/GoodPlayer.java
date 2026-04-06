@@ -12,7 +12,7 @@ public class GoodPlayer extends Colleague implements Player {
 
     @Override
     public void pickUpItem(Item item) {
-        this.mediator.itemPickedUp(item);
+        this.mediator.notify(this, new Event(item, EventType.ITEM_PICKED_UP));
     }
 
     public void levelUp() {
